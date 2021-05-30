@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDos App</title> 
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>ToDos</h1>
+      <div class="dates"></div>
+    </header>
+    <form>
+      <input type="text" class="moreInput" placeholder="Enter a task" />
+      <button class="button" type="submit">Add More
+      </button>
+      <div class="select">
+        <select name="todos" class="filter">
+          <option value="all">All</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+      <button class="clear">Clear List</button>
+    </form>
+    <div class="todo-container">
+      <ul class="list"></ul>
+    </div>
+  </div>
+  <footer> <p> &copy;2021 <span id="currentyear"></span>│Yrvyn Medina│ <span id="currentdate"></span>
+  </p>
+  <script src="date.js"></script>
+</footer>
+  <script src="todos.js"></script>
+  <script src="ls.js"></script>
+</body>
+
+</html>
+  
