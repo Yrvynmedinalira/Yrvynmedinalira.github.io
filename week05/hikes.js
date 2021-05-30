@@ -59,7 +59,7 @@ const hikeList = [
                 const item = document.createElement("li");
     item.innerHTML = ` <h2>${hike.name}</h2>
     <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
-    <div>
+    <div class="description">
             <div>
                 <h3>Distance</h3>
                 <p>${hike.distance}</p>
@@ -74,14 +74,55 @@ const hikeList = [
         this.addHikeListener()
     }
     // show one hike with full details in the parentElement
-    showOneHike(hikeName) {}
+    showOneHike(hikeName) 
+	{
+		const hike = this.getHikeByName(hikeName);
+		this.parentElement.innerHTML = "";
+		const item = document.createElement("li");
+    item.innerHTML = ` <h2>${hike.name}</h2>
+    <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
+    <div>
+            <div class="description">
+                <h3>Distance</h3>
+                <p>${hike.distance}</p>
+            </div>
+            <div>
+                <h3>Difficulty</h3>
+                <p>${hike.difficulty}</p>
+            </div>
+			<div>
+                <h3>Description</h3>
+                <p>${hike.description}</p>
+            </div>
+			<div>
+                <h3>Directions</h3>
+                <p>${hike.directions}</p>
+            </div>
+    </div>`;
+	this.parentElement.appendChild(this.backButton);
+           this.parentElement.appendChild(item);
+	}
     // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
     addHikeListener() {
-      // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
+      const hikes = document.querySelectorAll('h2');
+		
+		for (var key in Array.from(hikes))
+		{
+			const hike = Array.from(hikes)[key];
+			const name = hike.innerHTML;
+			
+			hike.parentElement.addEventListener('click', () => {
+				this.showOneHike(name);
+			});
+		}
+		
+		this.backButton.addEventListener('click', () => {
+			this.showHikeList();
+		});
     }
     buildBackButton() {
       const backButton = document.createElement("button");
-  
+		backButton.innerHTML = "Back";
       return backButton;
     }
   }
