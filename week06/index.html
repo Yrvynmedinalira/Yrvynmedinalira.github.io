@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDos</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <header><h1>Todos</h1></header>
+    
+    <div class="container">
+        <div class="todo-container">
+        <input id="inputField" type="text">
+        <button id="addToDo">Add +</button>
+        <div class="to-dos" id="toDoContainer"></div>
+        <div class="select">
+            <select name="todos" class="filter">
+              <option value="all">All</option>
+              <option value="active">Active</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+        
+            <button class="clear">Clear List</button>
+        </div>
+    </div>
+    <footer> <p> &copy;2021 <span id="currentyear"></span>│Yrvyn Medina│ <span id="currentdate"></span>
+    </p>
+    <script src="date.js"></script>
+  </footer>
+    <script src="toDos.js"></script>    
+    <script src="localStorage.js"></script>
+</body>
+</html>
