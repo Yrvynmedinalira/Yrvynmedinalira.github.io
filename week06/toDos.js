@@ -1,17 +1,17 @@
 let addToDoButton = document.getElementById('addToDo');
-let toDoContainer = document.getElementById('toDoContainer');
-let inputField = document.getElementById('inputField');
+let toDo = document.getElementById('toDo');
+let field = document.getElementById('field');
 
 addToDoButton.addEventListener('click', function(){
     var paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
-    paragraph.innerText = inputField.value;
-    toDoContainer.appendChild(paragraph);
-    inputField.value = "";
+    paragraph.innerText = field.value;
+    toDo.appendChild(paragraph);
+    field.value = "";
     paragraph.addEventListener('click', function(){
         paragraph.style.textDecoration = "line-through";
 })
 paragraph.addEventListener('dbclick', function(){
-    toDoContainer.removeChild(paragraph);
+    toDo.removeChild(paragraph);
 })
 })
