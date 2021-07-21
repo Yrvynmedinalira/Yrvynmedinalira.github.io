@@ -42,13 +42,126 @@ nav {
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	color: black;
+	color: rgb(175, 192, 24);
 	font-weight: 700;
 }
 .navigation a:hover {
 	color: white;
-	background-color: black;
+	background-color: rgb(9, 160, 60);
 }
+
+.card-container {
+    -webkit-perspective: 500px;
+            perspective: 500px;
+}
+
+.card-container:hover .card{
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+.card {
+    -webkit-transition: -webkit-transform 0.7s;
+            transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+/*Custom Styles*/
+.cards-container{	
+   display: -webkit-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: row;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 200px;
+	height: 200px;
+  margin: 10px;
+}
+
+.front, .back {
+  box-shadow: 0 1px 6px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+img {
+  display: block;
+}
+.forecast-container, .article-container, .contact-container {
+	margin : 20px;
+	background-color : rgb(49, 115, 168);
+	border : #230903 solid 2px;
+	}
+	.forecast-table {
+		display : flex;
+		flex-flow : row wrap;
+		border-right : 1px solid #230903;
+		}
+		.forecast-table {
+			display : flex;
+			flex-flow : row wrap;
+			border-right : 1px solid #230903;
+			}
+			.forecast-head {
+			display : block;
+			padding : 5px;
+			border-bottom : 1px solid #230903;
+			text-align : center;
+			font-size : 1rem;
+			background-color : #230903;
+			color : whitesmoke;
+			}
+			.forecast-col {
+			flex : 1 1 auto;
+			background-color : gray;
+			border-bottom : 1px solid #230903;
+			border-left : 1px solid #230903;
+			text-align : center;
+			}
+			.forecast-col:hover {
+			opacity : 0.9;
+			background-color : #0074a26b;
+			color : whitesmoke;
+			}
+			.forecast-title {
+			text-align : center;
+			}
+			.hero-container {
+				position : relative;
+				margin : 10px auto;
+				
+				}
+				
+.hero-container {
+padding:2px; 
+		display:grid; 
+		grid-gap: 2px;
+		grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}			
 @media only screen and (min-width: 32.5em) {
 	.navigation {
 		display: flex;

@@ -7,32 +7,191 @@
     <title>project</title>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 
 <body>
     <main>
-    <header>
-        <picture class="logo">
-            <img src="#" alt="???">
-        </picture>
-        <section class="headings">
-            <h1>???</h1>
-            <div class="m">?????.</div>
-        </section>
-    </header>
+        <header>
+            <picture class="logo">
+                <img src="img/nintendo.png" width="100px" height="100px" alt="logo">
+            </picture>
+            <section class="headings">
+                <h1>Mario Bros.</h1>
+                <div class="m">Have fun </div>
+            </section>
+        </header>
     <nav>
-        <ul class="navigation">
-            <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="OldCars.html">Old Cars</a></li>
-            <li><a href="ATV.html">ATV</a></li>
+        <div class="menu-icon" id="menu-icon" onclick="toggleNav()">
+            <span></span>
+    </div>
+    <div class="side" id="side">
+        <ul>             
+            <li><a href="index.html" class="active">Home</a></li>            
+            <li><a href="game.html">game</a></li>
             <li><a href="RaceCars.html">Race Cars</a></li>
             <li><a href="Ninjas.html">Ninja Motorcycles</a></li>
             <li><a href="OldMotorcycles.html">Old Motorcycles</a></li>
         </ul>
+    </div>
         <script src="js/menu.js"></script>
     </nav>
+    <section>
+        <div class="forecast-container">
+    
+            <h3 class="forecast-title">5 Day Forecast</h3>
+            <div class="forecast-table">
+                <div class="forecast-col">
+                    <span class="day"> Monday &#9788;</span>
+                     <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">                
+                    <span class="day"> Tuesday &#9788;</span>
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"> Wednesday &#9788;</span>
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"> Thursday &#9788;</span>
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+                <div class="forecast-col">
+                    <span class="day"> Friday &#9788;</span>               
+                    <p><span class="forecastTemp"></span>&#176;F</p>
+                </div>
+            </div>
+        </div>
+            <script src="js/hermosillo.js"></script>
+            
+        </section>
+
+    <div>
+        <div class="cards-container">
+            <!--   First Card -->
+            <div class="card-container">
+              <div class="card">
+                <div class="front">
+                    <img src="img/cloud2.jpg" width="200" height="200">
+                </div>
+                <div class="back">
+          <img src="img/cloud1.jpg" width="200" height="200">
+                </div>
+              </div>
+            </div>
+            
+          <!--   Second Card -->
+            <div class="card-container">
+              <div class="card">
+                <div class="front">
+                    <img src="img/mario1.jpg" width="200" height="200">
+                </div>
+                <div class="back">
+                    <img src="img/mario2.jpg" width="200" height="200">
+                </div>
+              </div>
+            </div>
+            
+            <!--   Third Card -->
+            <div class="card-container">
+              <div class="card">
+                <div class="front">
+                    <img src="img/yoshi1.jpg" width="200" height="200">
+                </div>
+                <div class="back">
+                    <img src="img/yoshi.png" width="200" height="200">
+                </div>
+              </div>
+            </div>
+            
+            <!--   Fourth Card -->
+            <div class="card-container">
+              <div class="card">
+                <div class="front">
+                    <img src="img/moshroom.jpg" width="200" height="200">
+                </div>
+                <div class="back">
+                    <img src="img/moshroom1.jpg" width="200" height="200">
+                </div>
+              </div>
+            </div>
+            
+            <!--   Fifth Card -->
+            <div class="card-container">
+              <div class="card">
+                <div class="front">
+                    <img src="img/luigi.jpg" width="200" height="200">
+                </div>
+                <div class="back">
+                    <img src="img/luigi1.jpg" width="200" height="200">
+                </div>
+              </div>
+            </div>  
+          </div>
+    </div>
+    
+
+    <div class="cards-container">
+        <!--   First Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+                <img src="img/mario1.jpg" width="200" height="200">
+            </div>
+          </div>
+        </div>
+        
+      <!--   Second Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+                <img src="img/mario1.jpg" width="200" height="200">
+            </div>
+            <div class="back">
+                <img src="img/mario2.jpg" width="200" height="200">
+            </div>
+          </div>
+        </div>
+        
+        <!--   Third Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+                <img src="img/yoshi1.jpg" width="200" height="200">
+            </div>
+            <div class="back">
+                <img src="img/yoshi.png" width="200" height="200">
+            </div>
+          </div>
+        </div>
+        
+        <!--   Fourth Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+                <img src="img/moshroom.jpg" width="200" height="200">
+            </div>
+            <div class="back">
+                <img src="img/moshroom1.jpg" width="200" height="200">
+            </div>
+          </div>
+        </div>
+        
+        <!--   Fifth Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+                <img src="img/luigi.jpg" width="200" height="200">
+            </div>
+            <div class="back">
+                <img src="img/luigi1.jpg" width="200" height="200">
+            </div>
+          </div>
+        </div>  
+      </div>
+</div>
 </main>
 <footer>
     &copy;2021 &nbsp; .:|:. &nbsp; Yrvyn Medina Lira &nbsp; .:|:. &nbsp; .:|:.<span id="currentdate"></span>
