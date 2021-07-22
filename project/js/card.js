@@ -1,4 +1,4 @@
-const requestURL = 'https://yrvynmedinalira.github.io/FinalProject/data/rental.json';
+const requestURL = 'https://yrvynmedinalira.github.io/project/data/card.json';
     fetch(requestURL)
         .then(function (response) {
             return response.json();
