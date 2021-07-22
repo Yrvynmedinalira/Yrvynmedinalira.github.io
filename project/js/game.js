@@ -39,6 +39,7 @@ kaboom({
     layers(['bg', 'obj', 'ui'], 'obj')
   
     const maps = [
+      
       [
         '=                                      =',
         '=                                      =',

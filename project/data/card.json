@@ -1,0 +1,74 @@
+{
+    "mario": [
+      {
+        "Name": "Mario",        
+        "photo": "mario.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Luigi",        
+        "photo": "luigi.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Princess",        
+        "photo": "princess1.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Warrior",        
+        "photo": "warrior1.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Yoshi",        
+        "photo": "yoshi1.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Moshroom",        
+        "photo": "moshroom.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Ghost",        
+        "photo": "ghost.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Bowser",        
+        "photo": "bowser1.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Cloud",        
+        "photo": "cloud1.jpg",
+        "": [
+         
+        ]
+      },
+      {
+        "Name": "Turtle",        
+        "photo": "turtle.jpg",
+        "": [
+         
+        ]
+      }     
+    ]
+  }
