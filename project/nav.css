@@ -8,11 +8,11 @@
   background-color: #3173a8; }
 
 .menu-icon, .menu-icon::before, .menu-icon::after {
-  height: 6px;
-  width: 37px;
+  height: 25px;
+  width: 80px;
   display: block;
   border-radius: 50px;
-  background-color: silver; }
+  background-color: white; }
 
 .menu-icon {
   transform: translate(0, 0);
@@ -31,7 +31,7 @@
 
 .side {
   background: #3173a8;
-  color: silver;
+  color: white;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -52,19 +52,19 @@
 .menu-icon.open::before {
   transform: translate(0, 0) rotate(45deg);
   opacity: 0;
-  background-color: silver; }
+  background-color: white; }
 
 .menu-icon.open:after {
   transform: translate(0, -96%) rotate(90deg);
-  background-color: silver; }
+  background-color: white; }
 
 .menu-icon.open {
   transform: translate(490%, 0) rotate(45deg);
-  background-color: silver; }
+  background-color: white; }
 
 .menu-icon.open:hover, .menu-icon.open:hover:before, .menu-icon.open:hover:after {
   cursor: pointer;
-  background-color: #afc018; }
+  background-color: white; }
 
 .side.open {
   left: 0; }

@@ -1,5 +1,5 @@
-$menu-icon-height: 6px;
-$menu-icon-width: 37px;
+$menu-icon-height: 25px;
+$menu-icon-width: 80px;
 $duration: .2s;
 $animate-type: ease;
 
@@ -19,7 +19,7 @@ $animate-type: ease;
   width: $menu-icon-width;
   display:block;
   border-radius: 50px;
-  background-color:silver;
+  background-color:white;
 }
 
 .menu-icon{
@@ -42,7 +42,7 @@ $animate-type: ease;
 
 .side{
   background: rgb(49, 115, 168);
-  color:silver;
+  color:white;
   height:100vh;
   position: absolute;
   top:0;
@@ -66,22 +66,22 @@ $animate-type: ease;
 .menu-icon.open::before{
   transform:translate(0, 0) rotate(45deg);
   opacity:0;
-  background-color:silver;
+  background-color:white;
 }
 
 .menu-icon.open:after{
   transform: translate(0, -96%) rotate(90deg);
-  background-color:silver;
+  background-color:white;
 }
 
 .menu-icon.open{
   transform: translate(490%, 0) rotate(45deg);
-  background-color:silver;
+  background-color:white;
 }
 
 .menu-icon.open:hover, .menu-icon.open:hover:before, .menu-icon.open:hover:after{
   cursor: pointer;
-  background-color:rgb(175, 192, 24);
+  background-color:white;
 }
 
 .side.open{
