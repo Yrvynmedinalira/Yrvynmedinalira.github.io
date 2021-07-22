@@ -11,9 +11,9 @@ const requestURL = 'https://yrvynmedinalira.github.io/project/data/card.json';
                 let h1 = document.createElement('h1');
                 
                 let image = document.createElement('img');
-                h1.textContent = mario[i].rentaltype;                
-                image.setAttribute('src', "images/" + rental[i].photo);
-                image.setAttribute('alt', rental[i].rentaltype);
+                h1.textContent = mario[i].Name;                
+                image.setAttribute('src', "images/" + mario[i].photo);
+                image.setAttribute('alt', mario[i].Name);
                 card.appendChild(h1);                
                 card.appendChild(image);
                 document.querySelector('div.cards').appendChild(card);
